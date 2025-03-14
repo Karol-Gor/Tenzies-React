@@ -1,0 +1,49 @@
+* {
+  box-sizing: content-box;
+}
+
+:root {
+  background-color: #0B2434;
+  font-family: 'Inter', 'Karla', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 45vw;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  border-radius: 5%;
+  background-color: #F5F5F5;
+  margin-top: 40px;
+  display: flex;  
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.dices {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, minmax(min-content, 50px));
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.die-button {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0px 3px 3px 0px rgb(98, 101, 132);
+  border: none;
+  border-radius: 10%;
+  padding: 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Karla";
+  font-size: 2rem;
+  font-weight: 600;
+}
