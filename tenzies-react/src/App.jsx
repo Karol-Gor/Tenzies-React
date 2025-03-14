@@ -1,6 +1,7 @@
 import { useState} from 'react'
 import { generateAllNewDice } from './logic/generator'
 import Die from "./components/Die"
+import Title from "./components/Title"
 
 export default function App() {
   
@@ -41,6 +42,7 @@ export default function App() {
 
   return (
     <main>
+      <Title/>
       <div className="dices">
         {diceComponents}
       </div>
