@@ -7,6 +7,8 @@ export default function Die ({die, hold}){
             className="die-button"
             style = {buttonStyle}
             onClick = {() => hold(die.id)}
+            aria-pressed={die.isHeld}
+            aria-label={`Die with value ${die.value}, ${die.isHeld ? "held" : "not held"}`}
         >{die.value}
         </button>
     )
